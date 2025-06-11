@@ -10,7 +10,7 @@
     "prepublish": "npm run build",
     "build": "yarn build:code && yarn build:tsc",
     "build:code": "vite build",
-    "build:tsc": "NODE_ENV=production tsc --emitDeclarationOnly --project tsconfig.build.json",
+    "build:tsc": "tsc --emitDeclarationOnly --project tsconfig.build.json",
     "build:demo": "MODE=demo vite build",
     "test:unit": "jest",
     "test": "yarn test:unit",
