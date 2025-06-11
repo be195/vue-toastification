@@ -9,7 +9,7 @@
     "prebuild": "rimraf ./dist",
     "prepublish": "npm run build",
     "build": "yarn build:code && yarn build:tsc",
-    "build:code": "MODE=lib vite build",
+    "build:code": "vite build",
     "build:tsc": "NODE_ENV=production tsc --emitDeclarationOnly --project tsconfig.build.json",
     "build:demo": "MODE=demo vite build",
     "test:unit": "jest",
