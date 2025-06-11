@@ -1,4 +1,6 @@
-.#{$vt-namespace}__icon {
+@use "variables";
+
+.#{variables.$vt-namespace}__icon {
   margin: auto 18px auto 0px;
   background: transparent;
   outline: none;
@@ -8,7 +10,7 @@
   align-items: center;
   width: 20px;
   height: 100%;
-  .#{$vt-namespace}__toast--rtl & {
+  .#{variables.$vt-namespace}__toast--rtl & {
     margin: auto 0px auto 18px;
   }
 }

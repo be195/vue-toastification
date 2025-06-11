@@ -1,4 +1,6 @@
-.#{$vt-namespace}__close-button {
+@use "variables";
+
+.#{variables.$vt-namespace}__close-button {
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
@@ -17,10 +19,10 @@
   &:focus {
     opacity: 1;
   }
-  .#{$vt-namespace}__toast:not(:hover) &.show-on-hover {
+  .#{variables.$vt-namespace}__toast:not(:hover) &.show-on-hover {
     opacity: 0;
   }
-  .#{$vt-namespace}__toast--rtl & {
+  .#{variables.$vt-namespace}__toast--rtl & {
     padding-left: unset;
     padding-right: 10px;
   }
